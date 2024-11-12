@@ -1,0 +1,84 @@
+*{
+    transition: all 750ms;
+    /* transition-duration: ; */
+}
+
+.loginIMG{
+    background-image: url(https://live.staticflickr.com/65535/53439142008_c7359050b3_k.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.loginIMG::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    /* z-index: 1; */
+    height: 100%;
+    min-width: 100%;
+    backdrop-filter: blur(15px);
+    background: rgba(23, 34, 26, 0.874);
+    /* background: rgba(0, 126, 243, 0.229); */
+
+}
+.mainBG{
+    background-image: url(https://live.staticflickr.com/65535/53439000956_cdfe6443ee_k.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.mainBG::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    /* min-height: 150vh; */
+    /* min-height: inherit !important; */
+    /* z-index: -1; */
+    height: 100%;
+    min-width: 100%;
+    backdrop-filter: blur(19px);
+    background: rgba(195, 197, 198, 0.542);
+}
+.signup{
+    z-index: 10 !important;
+    border-radius: 20px !important;
+}
+.headingShadow{
+   text-shadow:3px 5px 0px rgb(0, 80, 192);        
+}
+.joinShadow{
+   text-shadow:2px 3px 0px black;        
+}
+
+
+
+
+/* For Webkit browsers like Chrome and Safari */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #253037;
+    /* Set the color of the scrollbar thumb */
+    border-radius: 6px;
+    /* Set the border radius of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #63b7e4;
+    /* Set the color of the scrollbar track */
+}
+
+/* For Firefox */
+/* Note: Firefox uses a different set of properties for styling scrollbars */
+/* You can use the 'scrollbar-color' and 'scrollbar-width' properties */
+/* 'scrollbar-color' sets the color of the thumb and track, and 'scrollbar-width' sets the width of the scrollbar */
+
+/* Example for Firefox */
+/* 
+  scrollbar-color: #bcbcbc #f1f1f1;
+  scrollbar-width: 12px;
+*/
